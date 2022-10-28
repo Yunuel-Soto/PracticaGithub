@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('Formulario');
 // });
 
-Route::get('Formulario', [controladorVistas::class, 'showFormulario'])->name('form');
+Route::get('/', [controladorVistas::class, 'showFormulario'])->name('form');
 Route::get('Tabla', [controladorVistas::class, 'showTabla'])->name('Tab');
 
 Route::post('Entrar', [controladorVistas::class, 'entrando'])->name('in');
